@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0c56270962.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="home">
+        <div class="navbar">
+            <div class="nav container">
+                <h1 class="mainHeader">CRM</h1>
+                <ul class="navList">
+                    <li class="navItems"><a href="index.html">Courses</a></li>
+                    <li class="navItems"><a class="online" href="#">Teachers</a></li>
+                    <li class="navItems"><a href="groups.html">Groups</a></li>
+                    <li class="navItems"><a href="students.html">Students</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="courses container">
+            <ul class="coursesList">
+              
+            </ul>
+        </div>
+        <div class="modal">
+            <span class="out"><i class="fas fa-times"></i></span>
+            <h1 class="teachersNameHeader">Courses</h1>
+
+            <ul class="teachersname ">
+                
+               
+            </ul>
+        </div>
+        <footer>
+            <div class="container">
+                <button class="ractive">Add Teacher</button>
+            </div>
+        </footer>
+        <div class="loadingWrapper">
+            <div class="preWrapper">
+                <div class="loading1"></div>
+                <div class="loading2"></div>
+                <div class="loading3"></div>
+            </div>
+            <span>Loading...</span>
+        </div>
+    </section>
+    <section class="registration">
+        <div class="container">
+            <span class="off"><i class="fas fa-times"></i></span>
+            <h1 class="headerLogin">Enter new teacher's data</h1>
+            <form class="registrationForm">
+                <div class="loginWrapper">
+                    <input type="text" class="name" required>
+                    <i class="far fa-user"></i>
+                </div>
+                <div class="passwordWrapper">
+                    <input type="number" class="age" required>
+                    <i class="fas fa-user-friends"></i>
+                </div>
+             
+                <div class="skills">
+                    <label for="JavaScript"><input name="JavaScript" value="1" type="checkbox"
+                            class="additionSkills"><i class="fab fa-js-square"></i>JavaScript</label>
+                    <label for="Python"><input name="Python" type="checkbox" value="2" class="additionSkills"><i
+                            class="fab fa-python"></i>Python</label>
+                    <label for="Java"><input name="Java" type="checkbox" value="3" class="additionSkills"><i
+                            class="fab fa-java"></i>Java</label>
+                    <label for="C"><input name="C" type="checkbox" value="5" class="additionSkills"><i
+                            class="fas fa-copyright"></i>C</label>
+                    <label for="Php"><input name="Php" type="checkbox" value="7" class="additionSkills"><i
+                            class="fab fa-php"></i>Php</label>
+                </div>
+                <button class="loginbtn" type="submit">SUBMIT</button>
+            </form>
+    </section>
+    <template id="coursesTemplate">
+        <li class="coursesListItems">
+            <span class="oursName">REact</span>
+            <span class="cost">$3000</span>
+            <span class="teachers">
+                Courses
+                <i class="fas fa-angle-down"></i>
+            </span>
+            <span class="groups">
+                Groups
+                <i class="fas fa-angle-down"></i>
+            </span>
+        </li>
+      </template>
+    <script src="arr.js"></script>
+    <script src="teacher.js"></script>
+</body>
+
+</html>
